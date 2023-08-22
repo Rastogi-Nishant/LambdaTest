@@ -1,6 +1,6 @@
 pipeline {
     agent any
-
+    
     stages {
         stage('Checkout') {
             steps {
@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Build the Java project using Maven
-                sh 'mvn clean install'
+                sh 'mvn clean package'
             }
         }
         
@@ -23,13 +23,34 @@ pipeline {
             }
         }
         
-        stage('Package') {
+        stage('Deploy') {
             steps {
-                // Create executable JAR or WAR
-                sh 'mvn package'
+                // Example: Deploy to an application server (Tomcat)
+                sh 'cp target/your-app.war /path/to/tomcat/webapps/'
+
+                // Example: Restart the application server
+                sh '/path/to/tomcat/bin/shutdown.sh'
+                sh '/path/to/tomcat/bin/startup.sh'
             }
         }
-        
-     
+    }
+    
+    post {
+        always {
+            // Archive the generated artifacts (JAR, WAR, etc.)
+            archiveArtifacts artifacts: '**/target/*.{jar,war}', allowEmptyArchive: true
+        }
+        success {
+            // Example: Send a success notification
+            echo 'Build and deployment successful!'
+        }
+        failure {
+            // Example: Send a failure notification
+            emailext (
+                to: 'nishantr@lambdatest.com',
+                subject: "Failed: ${currentBuild.fullDisplayName}",
+                body: "The build ${currentBuild.fullDisplayName} has failed. Check the Jenkins console output for details.",
+            )
         }
     }
+}
