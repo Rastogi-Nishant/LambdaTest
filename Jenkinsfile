@@ -1,13 +1,13 @@
-stage('Run Tests') {
+stage('Git Flow: Checkout') {
     steps {
-        script {
-            // Example: Run tests only if the build was successful
-            def testResult = sh script: 'mvn test', returnStatus: true
-            if (testResult == 0) {
-                sh 'mvn verify'
-            } else {
-                echo 'Tests failed, skipping further steps.'
-            }
-        }
+        sh 'git checkout main'
+        sh 'git pull origin main'
+    }
+}
+
+stage('Git Flow: Build and Test') {
+    steps {
+        sh 'mvn clean install'
+        sh 'mvn test'
     }
 }
