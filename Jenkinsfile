@@ -30,14 +30,6 @@ pipeline {
             }
         }
         
-        stage('Deploy') {
-            steps {
-                // Example: Deploy to an application server (Tomcat)
-                sh 'cp target/your-app.war/path/to/tomcat/webapps/'
-
-                // Example: Restart the application server
-                sh '/path/to/tomcat/bin/shutdown.sh'
-                sh '/path/to/tomcat/bin/startup.sh'
-            }
+     
         }
     }
