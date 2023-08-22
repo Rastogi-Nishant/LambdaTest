@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="New Browsers" parallel="tests">
+
+    <test name="Android1">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="platformVersion" value="11"/>
+        <parameter name="platform" value="Android"/>
+        <parameter name="deviceName" value="Galaxy S20"/>
+        <classes>
+            <class name="demoMobile"/>
+        </classes>
+    </test>
+    <test name="iOS13">
+        <parameter name="browser" value="safari"/>
+        <parameter name="platformVersion" value="15.0"/>
+        <parameter name="platform" value="iOS"/>
+        <parameter name="deviceName" value="iPad 10.2 (2019)"/>
+        <classes>
+            <class name="demoMobile"/>
+        </classes>
+    </test>
+
+
+
+
+
+
+<!--    <test name="Android2">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="platformVersion" value="8"/>-->
+<!--        <parameter name="platform" value="Android"/>-->
+<!--        <parameter name="deviceName" value="Galaxy S7"/>-->
+<!--        <classes>-->
+<!--            <class name="demoMobile"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+<!--    <test name="iOS14">-->
+<!--        <parameter name="browser" value="safari"/>-->
+<!--        <parameter name="platformVersion" value="14.5"/>-->
+<!--        <parameter name="platform" value="iOS"/>-->
+<!--        <parameter name="deviceName" value="iPhone 12"/>-->
+<!--        <classes>-->
+<!--            <class name="demoMobile"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="iOS15">-->
+<!--        <parameter name="browser" value="safari"/>-->
+<!--        <parameter name="platformVersion" value="15.0"/>-->
+<!--        <parameter name="platform" value="iOS"/>-->
+<!--        <parameter name="deviceName" value="iPhone 12"/>-->
+<!--        <classes>-->
+<!--            <class name="demoMobile"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="1iOS14">-->
+<!--        <parameter name="browser" value="safari"/>-->
+<!--        <parameter name="platformVersion" value="14.0"/>-->
+<!--        <parameter name="platform" value="iOS"/>-->
+<!--        <parameter name="deviceName" value="iPhone 8 Plus"/>-->
+<!--        <classes>-->
+<!--            <class name="demoMobile"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="2iOS14">-->
+<!--        <parameter name="browser" value="safari"/>-->
+<!--        <parameter name="platformVersion" value="14.0"/>-->
+<!--        <parameter name="platform" value="iOS"/>-->
+<!--        <parameter name="deviceName" value="iPad Air (2020)"/>-->
+<!--        <classes>-->
+<!--            <class name="demoMobile"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="3iOS14">-->
+<!--        <parameter name="browser" value="safari"/>-->
+<!--        <parameter name="platformVersion" value="14.0"/>-->
+<!--        <parameter name="platform" value="iOS"/>-->
+<!--        <parameter name="deviceName" value="iPhone 6s"/>-->
+<!--        <classes>-->
+<!--            <class name="demoMobile"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="4iOS14">-->
+<!--        <parameter name="browser" value="safari"/>-->
+<!--        <parameter name="platformVersion" value="14.0"/>-->
+<!--        <parameter name="platform" value="iOS"/>-->
+<!--        <parameter name="deviceName" value="iPhone 12"/>-->
+<!--        <classes>-->
+<!--            <class name="demoMobile"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

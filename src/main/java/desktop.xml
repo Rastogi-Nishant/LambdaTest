@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="DesktopBrowsers" parallel="tests">
+
+
+    <test name="UTC+00:01">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="version" value="latest.0"/>
+        <parameter name="platform" value="Win 10"/>
+        <parameter name="timezone" value="UTC+00:00"/>
+
+        <classes>
+            <class name="demoDesktop"/>
+        </classes>
+    </test>
+
+    <test name="UTC+00:02">
+        <parameter name="browser" value="Safari"/>
+        <parameter name="version" value="16.0"/>
+        <parameter name="platform" value="MacOS Ventura"/>
+        <parameter name="timezone" value="UTC+00:00"/>
+
+        <classes>
+            <class name="demoDesktop"/>
+        </classes>
+    </test>
+<!--    <test name="UTC+00:03">-->
+<!--        <parameter name="browser" value="Firefox"/>-->
+<!--        <parameter name="version" value="102.0"/>-->
+<!--        <parameter name="platform" value="Win 11"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:04">-->
+<!--        <parameter name="browser" value="Microsoft Edge"/>-->
+<!--        <parameter name="version" value="18.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:05">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="102.0"/>-->
+<!--        <parameter name="platform" value="Win 11"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:06">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="101.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:07">-->
+<!--        <parameter name="browser" value="Internet Explorer"/>-->
+<!--        <parameter name="version" value="11.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:08">-->
+<!--        <parameter name="browser" value="Safari"/>-->
+<!--        <parameter name="version" value="latest"/>-->
+<!--        <parameter name="platform" value="Monterey"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:090">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="102.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC0+00:09">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="102.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC1+00:09">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="102.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC2+00:09">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="102.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC3+00:09">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="102.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC4+00:09">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="102.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:09">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="102.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:009">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="102.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:0009">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="102.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:10">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="103.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:11">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:12">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:13">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:14">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:15">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:16">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:17">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:18">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:19">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:20">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:21">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:22">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:23">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:24">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:25">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:26">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:27">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:28">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:29">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:30">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:31">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:32">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:33">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="99.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:34">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="102.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:35">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="102.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:36">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="102.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:37">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="102.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:38">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="102.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:39">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="102.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="UTC+00:40">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="102.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--     <test name="Safa">-->
+<!--         <parameter name="browser" value="chrome"/>-->
+<!--         <parameter name="version" value="102.0"/>-->
+<!--         <parameter name="platform" value="Win 10"/>-->
+<!--         <parameter name="timezone" value="UTC+00:00"/>-->
+<!--         <classes>-->
+<!--             <class name="demoDesktop"/>-->
+<!--         </classes>-->
+<!--     </test>-->
+
+<!--             <test name="UTC+01:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC+01:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC-01:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC-01:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC+02:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC+02:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC-02:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC-02:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC+03:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC+03:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC-03:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC-03:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC+04:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC+04:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC-04:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC-04:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC+05:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC+05:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC-05:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC-05:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC+06:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC+06:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+
+<!--             <test name="UTC-06:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC-06:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC+07:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC+07:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC-07:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC-07:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC+08:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC+08:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC-08:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC-08:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC+09:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC+09:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC-09:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC-09:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC+10:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC+10:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC-10:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC-10:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC+11:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC+11:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC-11:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC-11:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC+12:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC+12:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC-12:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC-12:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC+13:00">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC+13:00"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC-03:30">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC-03:30"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC+09:30">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC+09:30"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC+06:30">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC+06:30"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC+05:30">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC+05:30"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC+04:30">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC+04:30"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC+03:30">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC+03:30"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+<!--             <test name="UTC+05:45">-->
+<!--                 <parameter name="browser" value="Chrome"/>-->
+<!--                 <parameter name="version" value="102.0"/>-->
+<!--                 <parameter name="platform" value="Win 10"/>-->
+<!--                 <parameter name="timezone" value="UTC+05:45"/>-->
+
+<!--                 <classes>-->
+<!--                     <class name="demoDesktop"/>-->
+<!--                 </classes>-->
+<!--             </test>-->
+
+<!--                 <test name="UTC+00:00">-->
+<!--        <parameter name="browser" value="Chrome"/>-->
+<!--        <parameter name="version" value="102.0"/>-->
+<!--        <parameter name="platform" value="Win 10"/>-->
+<!--        <parameter name="timezone" value="UTC+00:00"/>-->
+
+<!--        <classes>-->
+<!--            <class name="demoDesktop"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+</suite>

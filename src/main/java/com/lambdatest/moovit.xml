@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="100" name="New Browsers" parallel="tests">
+
+    <!--    <test name="Android">-->
+    <!--        <parameter name="browser" value="Chrome"/>-->
+    <!--        <parameter name="platformVersion" value="10"/>-->
+    <!--        <parameter name="platform" value="Android"/>-->
+    <!--        <parameter name="deviceName" value="Galaxy S20"/>-->
+    <!--        <classes>-->
+    <!--            <class name="demoMobile"/>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+    <test name="iOS">
+        <parameter name="browser" value="safari"/>
+        <parameter name="platformVersion" value="15.0"/>
+        <parameter name="platform" value="iOS"/>
+        <parameter name="deviceName" value="iPhone 12 Pro Max"/>
+        <classes>
+            <class name="com.lambdatest.Moovit"/>
+        </classes>
+    </test>
+</suite>
