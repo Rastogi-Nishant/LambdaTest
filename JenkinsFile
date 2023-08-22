@@ -1,37 +1,40 @@
 pipeline {
-
-  agent any
-
-  stages {
-
-    stage('Checkout') {
-
-      steps {
-
-        checkout([$class: 'GitSCM',
-
-                  branches: [[name: '*/main']],
-
-                  userRemoteConfigs: [[url: 'GitHub - https://github.com/Rastogi-Nishant/LambdaTest.git']]])
-
-      }
-
-    }
-
-    stage('Test') {
-
-      steps {
-
-        bat 'python -m pip install selenium'
-
-        bat 'python -m pip install pytest'
-
-        bat 'python test1.py'
-
-      }
-
-    }
-
-  }
-
+	agent any
+	stages {
+		stage('One') {
+			steps {
+				echo 'Hi, this is Nishant from LambdaTest'
+			}
+		}
+		
+		stage('Two') {
+			steps {
+				input('Do you want to proceed?')
+			}
+		}
+		
+		stage('Build') {
+            steps {
+                bat './gradlew build'
+            }
+        }
+        
+        stage('Test') {
+            steps {
+                bat './gradlew test'
+            }
+        }
+        
+        stage('Check') {
+            steps {
+                bat './gradlew check'
+            }
+        }      
+		
+		stage('Five') {
+			steps {
+				echo 'Finished'
+			}
+		}		
+	}
 }
