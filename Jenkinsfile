@@ -1,40 +1,11 @@
+/* Requires the Docker Pipeline plugin */
 pipeline {
-	agent any
-	stages {
-		stage('One') {
-			steps {
-				echo 'Hi, this is Nishant from LambdaTest'
-			}
-		}
-		
-		stage('Two') {
-			steps {
-				input('Do you want to proceed?')
-			}
-		}
-		
-		stage('Build') {
+    agent { docker { image 'maven:3.9.3-eclipse-temurin-17-alpine' } }
+    stages {
+        stage('build') {
             steps {
-                bat './gradlew build'
+                sh 'mvn --version'
             }
         }
-        
-        stage('Test') {
-            steps {
-                bat './gradlew test'
-            }
-        }
-        
-        stage('Check') {
-            steps {
-                bat './gradlew check'
-            }
-        }      
-		
-		stage('Five') {
-			steps {
-				echo 'Finished'
-			}
-		}		
-	}
+    }
 }
