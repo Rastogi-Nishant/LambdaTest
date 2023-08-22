@@ -1,0 +1,37 @@
+pipeline {
+
+  agent any
+
+  stages {
+
+    stage('Checkout') {
+
+      steps {
+
+        checkout([$class: 'GitSCM',
+
+                  branches: [[name: '*/main']],
+
+                  userRemoteConfigs: [[url: 'GitHub - https://github.com/Rastogi-Nishant/LambdaTest.git']]])
+
+      }
+
+    }
+
+    stage('Test') {
+
+      steps {
+
+        bat 'python -m pip install selenium'
+
+        bat 'python -m pip install pytest'
+
+        bat 'python test1.py'
+
+      }
+
+    }
+
+  }
+
+}
