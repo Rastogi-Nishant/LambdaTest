@@ -24,10 +24,7 @@ pipeline {
         }
 
         stage('Deploy') {
-            steps {
-                // You can add deployment steps here, e.g., deploying to a server
-                sh 'cp target/your-app.war /path/to/tomcat/webapps/'
-            }
+           
         }
     }
 
